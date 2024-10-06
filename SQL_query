@@ -1,0 +1,39 @@
+-What is the country code of Switzerland?-
+/*SELECT *
+FROM countries;*/
+
+-Find the country which have SWZ as country code-
+/*SELECT code_pk
+FROM countries
+WHERE name = 'Switzerland';*/
+
+-Is there any other country whose code name ended by a ‘Z’?-
+/*SELECT name,code_pk
+FROM countries 
+WHERE code_pk LIKE '%z';*/
+
+-/*SELECT *
+FROM countries;*/
+
+/*SELECT code_pk
+FROM countries
+WHERE name = 'Switzerland';*/
+
+/*SELECT name,code_pk
+FROM countries 
+WHERE code_pk LIKE '%z';*/
+
+/*SELECT COUNT(name) AS Number_of_countries
+FROM countries;*/
+
+/*SELECT COUNT(name),name
+FROM countries
+WHERE name LIKE '%Republic%'
+GROUP BY name*/
+
+/*SELECT name 
+FROM countries
+WHERE name IN ('France','Congo')*/
+
+/*SELECT MIN(LENGTH(name)) AS min_name,name
+FROM countries*/
